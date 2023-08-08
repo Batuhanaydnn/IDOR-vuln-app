@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kaydol</title>
+</head>
+<body>
+    <h1>Kaydol</h1>
+    <form method="POST" action="{{ url_for('register') }}">
+        <label for="username">Kullanıcı Adı:</label>
+        <input type="text" name="username" required>
+        <br>
+        <label for="password">Şifre:</label>
+        <input type="password" name="password" required>
+        <input type="hidden" name="user_type" value="0">
+        <br>
+        <input type="submit" value="Kaydol">
+    </form>
+    <p><a href="{{ url_for('login') }}">Giriş Yap</a></p>
+</body>
+</html>
+

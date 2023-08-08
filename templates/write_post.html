@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yazı Ekle</title>
+</head>
+<body>
+    <h1>Yazı Ekle</h1>
+    <form method="POST" action="{{ url_for('write_post') }}">
+        <label for="title">Başlık:</label>
+        <input type="text" name="title" required>
+        <br>
+        <label for="content">İçerik:</label>
+        <textarea name="content" required></textarea>
+        <br>
+        <input type="submit" value="Yazı Ekle">
+    </form>
+    <p><a href="{{ url_for('index') }}">Ana Sayfa'ya Dön</a></p>
+</body>
+</html>

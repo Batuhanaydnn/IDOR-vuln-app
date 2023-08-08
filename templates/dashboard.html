@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kullanıcı Paneli</title>
+</head>
+<body>
+    <h1>Merhaba, {{ user.username }}!</h1>
+    <p><a href="{{ url_for('file') }}">Dosyaları Görüntüle</a></p>
+    <p><a href="{{ url_for('write_post') }}">Yazı Ekle</a></p>
+    <p><a href="{{ url_for('logout') }}">Çıkış Yap</a></p>
+</body>
+</html>
